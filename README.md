@@ -1,58 +1,160 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🎮 ALDI GAME STATION
+### Platform Web Rental & Reservasi Konsol PlayStation (PS3, PS4, PS5)
 
-## About Laravel
+[![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](./LICENSE)
+[![Author](https://img.shields.io/badge/Creator-Gede%20Aldi%20Irawan-blue?style=for-the-badge&logo=github)](https://github.com/aldwrnnnnn)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🛡️ WATERMARK & HAK CIPTA PROYEK
+**Proyek ini secara eksklusif dirancang, dibangun, dan dimiliki oleh:**  
+**Gede Aldi Irawan** ([@aldwrnnnnn](https://github.com/aldwrnnnnn))  
+*Hak Cipta © 2026 Gede Aldi Irawan. Seluruh hak cipta dilindungi undang-undang (All Rights Reserved).*  
+**DILARANG KERAS MENGGANDAKAN, MENJUAL KEMBALI, ATAU MENGKLAIM KARYA INI TANPA IZIN TERTULIS.**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📌 Tentang Proyek
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Aldi Game Station** adalah aplikasi berbasis web yang dirancang khusus untuk mempermudah operasional rental PlayStation (PS3, PS4, dan PS5). Platform ini memfasilitasi para gamer dan komunitas lokal dalam mengecek ketersediaan katalog game, melihat transparansi harga rental, melakukan reservasi online, hingga memantau status pesanan secara real-time.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Aplikasi ini mengatasi kendala antrean panjang dan ketidakpastian unit di rental game konvensional dengan menyediakan 2 skema pemesanan utama:
+1. **Main di Tempat (Rental Studio)**: Bermain di studio ber-AC dengan sofa nyaman, layar lebar, dan kontroler orisinal prima (dihitung per jam).
+2. **Sewa Bawa Pulang (Take Home)**: Membawa pulang konsol game lengkap beserta aksesoris untuk bermain di rumah (dihitung per hari).
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## ✨ Fitur Utama
 
+- **Katalog Game Interaktif & Real-time**:
+  - Filter cepat berdasarkan konsol (Semua, PS5, PS4, PS3).
+  - Fitur pencarian instan berdasarkan judul game maupun genre.
+  - Penanda badge game populer / trending.
+- **Kalkulator Estimasi Tarif Otomatis**:
+  - Perhitungan biaya transparan langsung di halaman pemesanan berdasarkan tipe rental, platform konsol, dan durasi sewa.
+- **Sistem Reservasi & Form Booking Instan**:
+  - Formulir pemesanan cepat dengan validasi lengkap.
+  - Pembuatan kode reservasi unik otomatis berformat `ALDI-YYYYMMDD-XXXX`.
+- **Integrasi WhatsApp Otomatis**:
+  - Tombol konfirmasi otomatis yang mengarahkan pelanggan langsung ke WhatsApp Admin dengan template pesan reservasi yang rapi dan terisi otomatis.
+- **Pelacak Status Reservasi (Booking Tracker)**:
+  - Pelanggan dapat memantau status booking (Pending, Confirmed, Completed, Cancelled) hanya dengan memasukkan kode booking atau nomor telepon.
+- **Desain UI Responsif & Modern**:
+  - Tampilan elegan, intuitif, dan nyaman digunakan baik di smartphone maupun desktop.
+  - Memenuhi standar kontras warna dan aksesibilitas WCAG AA.
+
+---
+
+## 🛠️ Tech Stack & Arsitektur
+
+- **Backend**: [Laravel 11](https://laravel.com) (PHP 8.2+)
+- **Frontend**: Blade Templating, [Tailwind CSS](https://tailwindcss.com), Alpine.js / Vanilla JavaScript
+- **Database**: SQLite / MySQL (Database migrations & seeders lengkap)
+- **Asset Bundler**: [Vite](https://vitejs.dev)
+- **Testing**: PHPUnit Feature & Unit Testing
+
+---
+
+## 🚀 Panduan Instalasi Lokal
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal:
+
+### 1. Prasyarat Sistem
+- PHP >= 8.2 (ekstensi: pdo, mbstring, openssl, tokenizer, xml, ctype, json)
+- Composer
+- Node.js & NPM
+- Git
+
+### 2. Kloning Repositori
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/aldwrnnnnn/aldigamestation.git
+cd aldigamestation
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 3. Install Dependensi Backend & Frontend
+```bash
+# Install paket PHP via Composer
+composer install
 
-## Contributing
+# Install paket JavaScript via NPM
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Konfigurasi Environment (.env)
+```bash
+# Duplikat file contoh konfigurasi
+cp .env.example .env
 
-## Code of Conduct
+# Generate Application Key
+php artisan key:generate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Sesuaikan konfigurasi nomor WhatsApp admin pada file `.env`:
+```env
+WHATSAPP_NUMBER=6281529434240
+```
 
-## Security Vulnerabilities
+### 5. Migrasi & Seeder Database
+```bash
+# Menjalankan migrasi dan mengisi data katalog game bawaan
+php artisan migrate --seed
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 6. Menjalankan Server Lokal
+Jalankan server Laravel dan Vite asset compiler:
+```bash
+# Terminal 1: Laravel Development Server
+php artisan serve
 
-## License
+# Terminal 2: Vite Build Server
+npm run dev
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Buka peramban (browser) dan akses: `http://localhost:8000`
+
+---
+
+## 🔒 Lisensi & Pernyataan Orisinalitas (Copyright Notice)
+
+Hak Cipta (c) 2026 **Gede Aldi Irawan (aldwrnnnnn)**. Seluruh hak cipta dilindungi undang-undang.
+
+```text
+================================================================================
+                           PROPRIETARY NOTICE
+================================================================================
+Semua kode sumber, aset desain, struktur basis data, logika bisnis, dan materi
+dokumentasi dalam repositori ini adalah milik intelektual dari Gede Aldi Irawan.
+
+KETENTUAN PENGGUNAAN:
+1. Dilarang keras melakukan plagiasi, menyalin, memodifikasi, mendistribusikan
+   ulang, atau mempublikasikan ulang proyek ini dengan mengatasnamakan pihak lain.
+2. Dilarang menggunakan sebagian atau seluruh isi repositori ini untuk tujuan
+   komersial tanpa izin tertulis dari pemilik sah.
+3. Proyek ini ditampilkan di GitHub hanya sebagai portofolio publik dan sarana
+   evaluasi kode bagi pemilik akun.
+================================================================================
+```
+
+Untuk detail legal selengkapnya, silakan baca file [LICENSE](./LICENSE).
+
+---
+
+## 👤 Profil Pemilik & Pengembang
+
+- **Nama**: Gede Aldi Irawan
+- **GitHub**: [@aldwrnnnnn](https://github.com/aldwrnnnnn)
+- **Email**: gedealdiirawan5@gmail.com
+- **Lokasi Proyek**: Bali, Indonesia
+
+---
+
+<div align="center">
+  <sub>Dibangun dengan dedikasi dan cinta untuk komunitas game oleh <b>Gede Aldi Irawan</b>.</sub>
+</div>
